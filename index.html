@@ -6,10 +6,64 @@
 </head>
 <body>    
         <div class="header">
-            <input class="topButtons" type="button" value="Sign Up">
-            <input class="topButtons" type="button" value="Sign In">
+            <input class="topButtons" id="myButton1" type="button" value="Sign Up">
+            <!-- The Modal -->
+                <div id="myModal1" class="modal">
+                <!-- Modal content -->
+                  <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <form>
+                                <div class="container">
+                                  <h1>Get Started</h1>
+                                  <hr>
+                                  <label for="name"><b>Full Name</b></label>
+                                  <input type="text" placeholder="Enter Full Name" name="name" required>
+                                  
+                                  <label for="name"><b>Username</b></label>
+                                  <input type="text" placeholder="Enter Username" name="Name" required>
+                              
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                                  <label for="psw-repeat"><b>Confirm Password</b></label>
+                                  <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+                                  <button type="submit" class="signupbtn">Sign Up</button>
+                                </div>
+                        </form>
+                   </div> 
+                </div>
+            <input class="topButtons" id="myButton2" type="button" value="Sign In">
+            <!-- The Modal -->
+                <div id="myModal2" class="modal2">
+                <!-- Modal content -->
+                  <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <form>
+                                <div class="container">
+                                  <h1>Welcome Back!</h1>
+                                  <hr>
+                                  
+                                  <label for="name"><b>Username</b></label>
+                                  <input type="text" placeholder="Enter Username" name="Name" required>
+                              
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                                  <button type="submit" class="signupbtn">Sign In</button>
+                                  <div class="signUp">
+                                          <p><b>Not a member?<a href="#myModal1" class="modal1">Sign Up</a></b></p>
+                                  </div>
+                                </div>
+                        </form>
+                   </div> 
+                </div>
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
-        </div> 
+        </div>
+        <div class="postButtons">
+                <input class="middleButtons" type="button" value="All Posts">
+                <input class="middleButtons" type="button" value= "Create Posts">
+        </div>
+        <script src="js/header.js"></script>
 </body>
 </html>
