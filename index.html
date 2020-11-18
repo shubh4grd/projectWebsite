@@ -69,9 +69,18 @@
            <div id="postModal" class="create">
 
         <!-- Modal content -->
-              <div class="modal-content">
-                <span class="closepost">&times;</span>
-                <p>Some text in the Modal..</p>
+              <div class="modal-content" id="createModal">
+                <span style="margin-right: 15px;" class="closepost">&times;</span>
+                <div class="container">
+                        <h1 style="margin-bottom: 20px;" >Pen Your Post</h1>
+                        <label style="display: block;" for="name"><b>Title:</b></label>
+                        <input style="width: 40%;" type="text">
+                        <label id="contentLabel" for="text">Content:</label>
+                        <textarea name="content" id="postContent" cols="105" rows="20" ></textarea>
+                        <button id="createBtn">Create</button>
+                </div> 
+                        
+                        
               </div>    
 
         </div>

@@ -206,4 +206,32 @@ input.middleButtons {
   text-decoration: none;
   cursor: pointer;
 }
-
+#contentLabel{
+  display: block;
+  font-weight: bolder;
+}
+#createModal {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 8px;
+  border: 1px solid rgb(247, 243, 243);
+  width: 65%; /* Could be more or less, depending on screen size */
+  height: 90%;
+}
+textarea{
+  background-color: #f1f1f1;
+  border-style: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+textarea:focus{
+  background-color: #ddd;
+}
+#createBtn{
+  width: 10%;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+}
