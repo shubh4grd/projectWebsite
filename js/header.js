@@ -34,3 +34,20 @@ btn.onclick = function() {
 span.onclick = function() {
   modal2.style.display = "none";
 }
+// Get the Sign up modal again
+var modal = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myButton3");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// Get the sign up button that closes the last modal
+var btn = document.getElementsByClassName("reSignUp")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal2.style.display = "none";
+  modal.style.display = "block";
+}

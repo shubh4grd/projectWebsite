@@ -7,7 +7,7 @@
 <body>    
         <div class="header">
             <input class="topButtons" id="myButton1" type="button" value="Sign Up">
-            <!-- The Modal -->
+            <!-- The sign up Modal -->
                 <div id="myModal1" class="modal">
                 <!-- Modal content -->
                   <div class="modal-content">
@@ -33,7 +33,7 @@
                    </div> 
                 </div>
             <input class="topButtons" id="myButton2" type="button" value="Sign In">
-            <!-- The Modal -->
+            <!-- The  sign in Modal -->
                 <div id="myModal2" class="modal2">
                 <!-- Modal content -->
                   <div class="modal-content">
@@ -50,9 +50,9 @@
                                   <input type="password" placeholder="Enter Password" name="psw" required>
                               
                                   <button type="submit" class="signupbtn">Sign In</button>
-                                  <div class="signUp">
-                                          <p><b>Not a member?<a href="#myModal1" class="modal1">Sign Up</a></b></p>
-                                  </div>
+                                    <p id="notMember"><b>Not a member?</b></p>
+                                    <input class="reSignUp" id="myButton3" type="button" value="Sign Up">
+                                    
                                 </div>
                         </form>
                    </div> 
@@ -60,10 +60,22 @@
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
         </div>
+        <!--create post button-->
         <div class="postButtons">
-                <input class="middleButtons" type="button" value="All Posts">
-                <input class="middleButtons" type="button" value= "Create Posts">
+          <a href="html/postslist.html"><input class="middleButtons" id="allPost" type="button" value="All Posts"></a>
+          <input class="middleButtons" id="createPost" type="button" value= "Create Posts">
+        </div>
+            <!-- The Modal -->
+           <div id="postModal" class="create">
+
+        <!-- Modal content -->
+              <div class="modal-content">
+                <span class="closepost">&times;</span>
+                <p>Some text in the Modal..</p>
+              </div>    
+
         </div>
         <script src="js/header.js"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>
