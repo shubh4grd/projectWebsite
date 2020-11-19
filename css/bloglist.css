@@ -6,3 +6,56 @@ body.page2{
 #tagline{
     color: rgb(238, 235, 238);
 }
+.blogPost{
+    
+    
+}
+.postPair{
+    display: inline-block;
+    display: flex;
+    vertical-align: center;
+
+}
+.post{
+    display: flex;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+    height: 150px;
+}
+.user{
+    display: flexbox;
+    background-color: white;
+    width: 30%;
+    border-radius: 12px 0px 0px 12px;
+    
+}
+h4{
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50%;
+}
+.content{
+    background-color: rgb(232, 232, 232);
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 0px 12px 12px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.fa{
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+    display: inline;
+}
+.fa:hover{
+    color: red;
+    cursor: pointer;
+}
+.threeDot{
+    font-size: 28px;
+    position: absolute;
+    bottom: 57%;
+    left: 44%;
+}
