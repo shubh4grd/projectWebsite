@@ -1,0 +1,8 @@
+/* here we define the background colour for second page */
+body.page2{
+    background-color: rgb(255, 165, 0);
+}
+/* font colour for the tag line */
+#tagline{
+    color: rgb(238, 235, 238);
+}
