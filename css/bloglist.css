@@ -24,11 +24,10 @@ body.page2{
     height: 150px;
 }
 .user{
-    display: flexbox;
     background-color: white;
     width: 30%;
     border-radius: 12px 0px 0px 12px;
-    
+    padding: 1%;
 }
 h4{
     text-align: center;
@@ -40,22 +39,21 @@ h4{
     padding: 5px;
     padding-left: 10px;
     border-radius: 0px 12px 12px 0px;
-    text-overflow: ellipsis;
-    overflow: hidden;
 }
 .fa{
     float: right;
     margin-right: 2%;
     margin-top: 1%;
-    display: inline;
+    display: block;
 }
 .fa:hover{
     color: red;
     cursor: pointer;
+   
 }
-.threeDot{
-    font-size: 28px;
-    position: absolute;
-    bottom: 57%;
-    left: 44%;
+#dots{
+    position: relative;
+    bottom: -108px;
+    right: -24px;
+    font-weight: bold;
 }
