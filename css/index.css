@@ -118,7 +118,7 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 /* Set a style for all buttons */
-button {
+.header button, .create button {
   background-color: #4CAF50;
   color: white;
   padding: 10px 2px;
@@ -129,7 +129,7 @@ button {
   opacity: 0.9;
 }
 
-button:hover {
+.header button:hover {
   opacity:1;
 }
 /* Add padding to container elements */
@@ -218,7 +218,7 @@ input.middleButtons {
   width: 65%; /* Could be more or less, depending on screen size */
   height: 90%;
 }
-textarea{
+.content-textarea{
   background-color: #f1f1f1;
   display: block;
   border-style: none;
@@ -228,7 +228,7 @@ textarea{
   width: 95%;
   height: 290px ;
 }
-textarea:focus{
+.content textarea:focus{
   background-color: #ddd;
 }
 #createBtn{
