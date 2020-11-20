@@ -27,24 +27,39 @@ body.page2{
     background-color: white;
     width: 30%;
     border-radius: 12px 0px 0px 12px;
-    padding: 1%;
 }
-h4{
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 50%;
+.postHead{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50%;
+    margin-bottom: 50%;
 }
 .content{
     background-color: rgb(232, 232, 232);
-    padding: 5px;
-    padding-left: 10px;
     border-radius: 0px 12px 12px 0px;
+    overflow: hidden;
+    padding-left: 5px;
+}
+.comment{
+    height: 70px;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
+    overflow: hidden;
 }
 .fa{
     float: right;
-    margin-right: 2%;
-    margin-top: 1%;
+    margin-right: 10px;
+    margin-top: 10px;
     display: block;
+    border: none;
+    background-color:rgb(232, 232, 232) ;
 }
 .fa:hover{
     color: red;
@@ -54,6 +69,70 @@ h4{
 #dots{
     position: relative;
     bottom: -108px;
-    right: -24px;
+    right: -33px;
     font-weight: bold;
+}
+* {box-sizing: border-box}
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 45%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: rgb(31, 212, 25);
+  color: white;
+  margin-left: 5%;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+  margin-right: 5%;
+}
+
+/* Add padding and center-align text to the container */
+.choiceContainer {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.trash {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  } 
+
+/* Modal Content/Box */
+.box-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+    width: 100%;
+  }
 }
