@@ -7,10 +7,11 @@ function addcomment(id){
       input.placeholder="Leave a comment...";
     document.getElementById('usercomment').value=""
 }
-// increasing the like  by the like button
+// increasing number like on clicking like button
  var i=0;
  function likefunction(){
      i=i+1;
+     document.getElementById('liked').innerHTML ='<i class="fa fa-thumbs-up"</i> '+ " Liked!";
      document.getElementById('likeincrease').innerHTML='<p>'+i+ " person likes this !"+'</p>'
 }
 
