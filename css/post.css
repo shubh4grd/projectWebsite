@@ -1,78 +1,46 @@
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#comment-area {
-    max-width: 65%;
-}
-
-.title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 2vh;
-    font-size: 30px;
-    /* font-family: 'Bree Serif', serif; */
-    font-family: 'Pragati Narrow', sans-serif;
-}
-
-.post {
-    padding: 3vw;
-    /* width: 100vw; */
-}
-
-.user {
-    width: 100%;
-    margin-bottom: 5vh;
-    margin-top: 0%;
-}
-
-
-.edit-content {
-    width: 100%;
-}
-
-#posttext {
-    width: 100%;
-    border: none;
-    resize: none;
-    box-sizing: border-box;
-    border-radius: 3px;
-    height: 30vh;
-}
-
-#posttext:focus {
-    border: 3px solid rgb(192, 165, 192)
-}
-
-.edit-save {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.user-name {
-    width: 50%;
-    position: relative;
-    top: 37px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-}
-
-.edit-save button {
+    margin-top: 3vh;
+    padding: 10px 30px;
     border: 0;
     outline: 0;
-    padding: 11px 11px 11px 25px;
     background: rgb(240, 20, 64);
     box-shadow: 0px 10px 20px 0.1px rgb(240, 20, 64);
     color: white;
     font-weight: bold;
     cursor: pointer;
-
-
+    /* styling the middle text which is present in head part */
+.middleText{
+    font-family: 'Marck Script', cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
 }
-
-.buttons {
+/* margin og the body */
+body{
+    margin: 0px;
+}
+/* styling the heading of post area */
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* styling the username */
+h4{
+    margin-bottom: 50px;
+    font-family: 'Niconne', cursive;
+    font-size: xx-large;
+    font-weight: normal;
+}
+/* styling the edit button */
+.p-btn{
+    float: right;
+}
+/* styling the post area */
+.post{
+    padding: 75px;
+    padding-top: 5px;
+}
+/* styling the like button */
+.like-btn, .commet-btn, .p-btn{
     margin-top: 3vh;
     padding: 10px 30px;
     border: 0;
@@ -83,32 +51,26 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-
-#comment button {
-    margin-top: 3vh;
-    padding: 10px 10px;
-    border: 0;
-    outline: 0;
-    background: rgb(240, 20, 64);
-    box-shadow: 0px 10px 20px 0.1px rgb(240, 20, 64);
-    color: white;
-    cursor: pointer;
+/* styling the comment box */
+#usercomment{
+    width: 55%;
+    max-height: 500px;
 }
-
-.comment-list {
-    max-width: 65%;
-    background: rgb(238, 234, 238);
+/* styling the comments area */
+.allcomment{
+    background-color: lightgrey;
     padding: 10px;
+    width: 55%;
 }
+/* styling the comment */
+#addcomment{
+    background-color: white;
+    padding: 20px 10px;
+    font-size: larger;
 
-.user-comment {
-    /* box-sizing: border-box; */
-    padding: 10px;
-    box-sizing: border-box;
-
-    background: #ffffff;
 }
-
-p#like-people {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* styling the edit model */
+#editarea{
+    display: none;
+    margin: 10px;
 }

@@ -1,55 +1,48 @@
-var likeButton = document.getElementById("like-button");
-var likeLine = document.getElementById("like-people");
-var clickNumber = 0;
-var textBox = document.getElementById("posttext");
-var editSaveButton = document.querySelector(".edit-save button");
-var commentButton = document.getElementById("comment-button");
-const editText = editSaveButton.innerHTML;
-var commentList = document.querySelector(".comment-list");
-var edit = true;
-var save = false;
+// adding comment with the help of comment button
+function addcomment(id){
+    console.log(id.value);
+    document.getElementById('addEventNames').innerHTML+='<p id="addcomment">'+id.value+'</p>';
+      var input=document.getElementById('usercomment');
+      input.value="";
+      input.placeholder="Leave a comment...";
+    document.getElementById('usercomment').value=""
+}
+// increasing the like  by the like button
+ var i=0;
+ function likefunction(){
+     i=i+1;
+     document.getElementById('likeincrease').innerHTML='<p>'+i+ " person likes this !"+'</p>'
+}
 
-textBox.innerHTML = localStorage.postcontent.replace(/\s+/g, ' ').trim();
-document.getElementsByClassName("user")[0].innerHTML = document.cookie.split('=')[1];
-document.getElementsByClassName("title")[0].innerHTML = localStorage.title;
-likeButton.addEventListener("click", () => {
-    ++clickNumber;
-    likeButton.innerHTML = "Liked!"
-    if (clickNumber == 1) {
-        likeLine.innerHTML = "1 person likes this!";
-    }
-    else {
-        likeLine.innerHTML = `${clickNumber} people have liked this!`
-    }
-})
+// editing the post-content and saving it
+function changefunction(id){
+  var newnode=document.getElementById("mybtn1").innerHTML;
+
+  if (newnode=='Edit <i class="fas fa-edit" aria-hidden="true"></i>') {
+    var node="Save " +
+              '<i class="fas fa-save">'+
+              '</i>';
+  document.getElementById("mybtn1").innerHTML=node;
 
 
-editSaveButton.addEventListener("click", () => {
-    if (edit) {
-        editSaveButton.innerHTML = ' Save <i class="fa fa-save"></i>';
-        edit = false;
-        save = true;
-        textBox.focus();
-    }
-    else {
-        edit = true;
-        save = false;
-        editSaveButton.innerHTML = editText;
-    }
-})
+    var post=document.getElementById('container-text');
+    var editter=document.getElementById('editarea');
+    console.log(post.innerHTML);
+    editter.value=post.innerHTML;
+    post.style.display='none';
+    editter.style.display='block';
+  }
+  else{
+    var node1="Edit "+ 
+              '<i class="fas fa-edit" aria-hidden="true">'+
+              '</i>';
+    document.getElementById("mybtn1").innerHTML=node1;
 
-var allcomment = [];
-var numOfComment = 0;
-commentButton.addEventListener("click", () => {
-    numOfComment++;
-    comment = document.getElementById("comment-area");
-    var p = document.createElement("p");
-    p.setAttribute("id", `comment${numOfComment}`);
-    p.setAttribute("class", "user-comment");
-    p.innerHTML = comment.value;
-    allcomment.push(p);
-    comment.value = "";
-    for (let c = allcomment.length - 1; c >= 0; c--) {
-        commentList.appendChild(allcomment[c]);
-    }
-})
+    
+    var viewer=document.getElementById('container-text');
+    viewer.innerHTML=id.value;
+    viewer.style.display='block';
+    id.style.display='none';
+    
+  }
+}
